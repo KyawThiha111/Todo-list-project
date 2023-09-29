@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)), url(./bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    width: 50%;
+    text-align: center;
+}
+.container .input-box{
+ background-color: white;
+ padding: 10px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 20px;
+}
+.container .input-box .inputTodo{
+ width: 80%;
+ padding: 5px;
+ border-top-right-radius:"none";
+ outline: none;
+  font-size: 1rem;
+}
+.container .input-box .inputTodo::placeholder{
+    color:#170e0a ;
+}
+.container .input-box .addBtn{
+    width: 80px;
+    font-size: 1.5rem;
+    background-color: #170e0a;
+    color: white;
+}
+
+.todo-container{
+   background-color: white;
+   
+}
+.todo-container div{
+    display: flex;
+    padding:10px 10px;
+}
+.todo-container .list-item{
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 6;
+}
+/* .added-todo .list-item .btns-wrapper{
+ font-size: 2rem;
+ display: flex;
+} */
+.checked{
+    border: 1px solid rgb(255, 0, 0,0.5);
+    width: 80px;
+    padding: 5px;
+    background-color:rgba(15, 249, 15, 0.796);
+    margin-left: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: .6s ease;
+    font-size: 2rem;
+    color: white;
+    flex: 2;
+}
+.checked:hover{
+    background-color:rgba(15, 249, 15, 0.9);
+    color: white;
+    padding:10px ;
+}
+.deleted{
+    border: 1px solid rgb(255, 0, 0,0.5);
+    width: 80px;
+    padding: 5px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    color: white;
+    font-size: 2rem;
+    transition: .6s ease;
+    flex: 2;
+}
+.deleted:hover{
+    background-color:white;
+    color: red;
+    padding:10px ;
+}
+
